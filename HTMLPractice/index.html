@@ -3,32 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
+    <title>Makeup Products</title>
     <style>
+        *{
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
         .image-container {
             display: flex;
             justify-content: space-between;
-            
         }
-
-        
+        nav{
+            text-align: center;
+        }
+        nav a{
+            text-decoration: none;
+        }
         .image-container img {
             max-width: 30%;
             height: auto;
-            border-radius: 8px;
+            border-radius: 20px;
             margin-top: 30px;
             margin-bottom: 30px;
+        }
+        #table-border{
+            padding-bottom: 10px;
         }
         table {
             width: 50%;
             border-collapse: collapse;
             margin: 20px auto;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
         }
 
         
         th {
-            background-color: #333;
-            color: white;
+            background-color: #aa5151;
+            color: rgb(236, 111, 111);
             padding: 10px;
         }
 
@@ -40,28 +52,27 @@
     </style>
 </head>
 <body>
-    <nav style="text-align: center; color: #333; font-size: 16px; line-height: 1.5; font-family: 'Arial', sans-serif;">
+    <nav>
         <a href="#">Home</a>
         <a href="#">Images</a>
-        <a href="#">table</a>
-        <a href="#">form</a>
+        <a href="#">Table</a>
+        <a href="#">Contact Us</a>
     </nav>
     <div>
-        <p style="color: #333; font-size: 16px; line-height: 1.5; font-family: 'Arial', sans-serif;">Flowers are symbolic of beauty, love and tranquillity. They form the soul of a garden and convey the message of 
+        <p >Flowers are symbolic of beauty, love and tranquillity. They form the soul of a garden and convey the message of 
             nature to man. Flowers and objects of aesthetic, ornamental, 
             social, religious and cultural value. They are used for conveying love, happiness, grief, mourning etc.</p>
     </div>
 
     <div class="image-container">
-        <img src="purple-petal.jpg" alt="Image 1">
-        <img src="rose.jpg" alt="Image 2" >
-        <img src="white-flower.jpg" alt="Image 3">
+        <img src="cosmetics.jpg" alt="Image 1">
+        <img src="eye-shadows.jpg" alt="Image 2" >
+        <img src="lipstick.jpg" alt="Image 3">
     </div>
-    
+      
     <div>
-        
-        <div class="container">
-            <h2 style="color: #8a6d6d; font-size: 16px; line-height: 1.5; font-family: 'Arial', sans-serif; text-align:center">Flowers Data</h2>
+        <div class="container" id="table-border">
+            <h2 style="color: #ce7f7f;  line-height: 1.5; font-family: 'Arial', sans-serif; text-align:center">Makeup Products Data</h2>
             <table border="1" id="table">
                 <thead>
                     <tr>
@@ -91,11 +102,23 @@
         </div>
     </div>
 
-    <div>
+    <div class="container" id="contact-form">
+        <h2>For more details contact us...</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </div>
     <footer style="color: #333; font-size: 16px; line-height: 1.5; font-family: 'Arial', sans-serif;text-align:center">
-        &copy; 2024 Your Website Name. All rights reserved.
+        <strong>&copy; 2024 MyMakeUp. All rights reserved.</strong>
     </footer>
 </body>
 </html>

@@ -4,8 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        
+        .image-container img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        
+        th {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+       
+        td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <nav style="text-align: center; color: #333; font-size: 16px; line-height: 1.5; font-family: 'Arial', sans-serif;">
+        <a href="#">Home</a>
+        <a href="#">Images</a>
+        <a href="#">table</a>
+        <a href="#">form</a>
+    </nav>
+    <div>
+        <p style="color: #333; font-size: 16px; line-height: 1.5; font-family: 'Arial', sans-serif;">Flowers are symbolic of beauty, love and tranquillity. They form the soul of a garden and convey the message of 
+            nature to man. Flowers and objects of aesthetic, ornamental, 
+            social, religious and cultural value. They are used for conveying love, happiness, grief, mourning etc.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="purple-petal.jpg" alt="Image 1">
+        <img src="rose.jpg" alt="Image 2" >
+        <img src="white-flower.jpg" alt="Image 3">
+    </div>
     
+    <div>
+        
+        <div class="container">
+            <h2 style="color: #8a6d6d; font-size: 16px; line-height: 1.5; font-family: 'Arial', sans-serif; text-align:center">Flowers Data</h2>
+            <table border="1" id="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Color</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Purple-Petal</td>
+                        <td>Purple</td>
+                        <td>New York</td>
+                    </tr>
+                    <tr>
+                        <td>Rose</td>
+                        <td>Blue</td>
+                        <td>Los Angeles</td>
+                    </tr>
+                    <tr>
+                        <td>White-Flower</td>
+                        <td>White</td>
+                        <td>London</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+    <footer style="color: #333; font-size: 16px; line-height: 1.5; font-family: 'Arial', sans-serif;text-align:center">
+        &copy; 2024 Your Website Name. All rights reserved.
+    </footer>
 </body>
 </html>

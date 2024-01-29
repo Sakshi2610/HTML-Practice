@@ -7,73 +7,74 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Images</a>
-        <a href="#">Table</a>
-        <a href="#">Contact Us</a>
-    </nav>
-    <div>
-        <p >Flowers are symbolic of beauty, love and tranquillity. They form the soul of a garden and convey the message of 
-            nature to man. Flowers and objects of aesthetic, ornamental, 
-            social, religious and cultural value. They are used for conveying love, happiness, grief, mourning etc.</p>
-    </div>
+    <div class="container">
+        <nav>
+            <a href="#home">Home </a>
+            <a href="#image"> Images </a>
+            <a href="#table-border"> Table </a>
+            <a href="#contact-form"> Contact Us</a>
+        </nav>
+        <div class="container" id="home">
+            <h3>Discover the artistry of enhancing your inherent beauty through our exquisite makeup range.
+            </h3>
+        </div>
 
-    <div class="image-container">
-        <img src="cosmetics.jpg" alt="Image 1">
-        <img src="eye-shadows.jpg" alt="Image 2" >
-        <img src="lipstick.jpg" alt="Image 3">
-    </div>
-      
-    <div>
+        <div class="image-container" id="image">
+            <img src="./images/cosmetics.jpg" alt="cosmetics image">
+            <img src="./images/eye-shadows.jpg" alt="image of eye-shadow" >
+            <img src="./images/lipstick.jpg" alt="lipstick">
+        </div>
+        
+        
         <div class="container" id="table-border">
             <h2 style="color: #ce7f7f;  line-height: 1.5; font-family: 'Arial', sans-serif; text-align:center">Makeup Products Data</h2>
             <table border="1" id="table">
                 <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Color</th>
+                        <th>Colors</th>
                         <th>City</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Purple-Petal</td>
-                        <td>Purple</td>
+                        <td>Makeup - Kit</td>
+                        <td>Any Colors</td>
                         <td>New York</td>
                     </tr>
                     <tr>
-                        <td>Rose</td>
-                        <td>Blue</td>
+                        <td>Eye - Shadows</td>
+                        <td>Any Colors</td>
                         <td>Los Angeles</td>
                     </tr>
                     <tr>
-                        <td>White-Flower</td>
-                        <td>White</td>
+                        <td>Lipsticks</td>
+                        <td>Any Colors</td>
                         <td>London</td>
                     </tr>
                 </tbody>
             </table>
         </div>
+
+        <div class="container" id="contact-form">
+            <h2>For more details contact us...</h2>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <footer style="color: #333; font-size: 16px; line-height: 1.5; font-family: 'Arial', sans-serif;text-align:center">
+            <strong>&copy; 2024 MyMakeUp. All rights reserved.</strong>
+        </footer>
     </div>
-
-    <div class="container" id="contact-form">
-        <h2>For more details contact us...</h2>
-        <form>
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    <footer style="color: #333; font-size: 16px; line-height: 1.5; font-family: 'Arial', sans-serif;text-align:center">
-        <strong>&copy; 2024 MyMakeUp. All rights reserved.</strong>
-    </footer>
 </body>
 </html>

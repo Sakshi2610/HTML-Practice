@@ -3,12 +3,14 @@
     font-family: 'Arial', sans-serif;
 }
 #home{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #aa5151;
+    margin-bottom: 30px;
 }
 #home h3{
     display: block;
-    color: #333;
+    color: #f1e4e4;
     width:auto;
     height:max-content;
     text-align: center;
@@ -18,12 +20,25 @@
     justify-content: space-between;
 }
 nav{
-    text-align: center;
+    /* text-align: center; */
     font-size: larger;
     justify-content: space-between;
+    margin: 30px 30px;
 }
 nav a{
     text-decoration: none;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo img {
+    width: 120px; 
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%;
 }
 .image-container img {
     max-width: 30%;

@@ -22,10 +22,6 @@
     height:max-content;
     text-align: center;
 }
-.image-container {
-    display: flex;
-    justify-content: space-between;
-}
 nav{
     /* text-align: center; */
     font-size: larger;
@@ -37,7 +33,6 @@ nav a{
     text-decoration: none;
     color: #ce7f7f;
 }
-
 .logo {
     display: inline-block;
     vertical-align: middle;
@@ -59,13 +54,18 @@ nav a{
     height: 300px;
     margin-top: 40px;
 }
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    
+}
 .image-container img {
     max-width: 25%;
     height: auto;
     border-radius: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
-    transition: transform .3s;
+    transition: transform .7s;
 }
 .image-container img:hover{
         transform: scale(1.5); 
@@ -80,13 +80,11 @@ table {
     margin-bottom: 20px;
     padding-bottom: 10px;
 }
-
 th {
     background-color: #aa5151;
     color: #fff;
     padding: 10px;
 }
-
 td {
     padding: 8px;
     text-align: center;
@@ -100,12 +98,10 @@ td {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 5px solid #ce7f7f;
 }
-
 label {
     display: block;
     margin-bottom: 8px;
 }
-
 input, textarea {
     width: 100%;
     padding: 8px;
@@ -114,7 +110,6 @@ input, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 button {
     background-color: #aa5151;
     color: white;
@@ -124,7 +119,6 @@ button {
     cursor: pointer;
     
 }
-
 button:hover {
     background-color: #c98080;
 }

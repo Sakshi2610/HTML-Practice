@@ -28,22 +28,3 @@ var name = "sakshi"
 console.log(typeof(name))
 var name = 123
 console.log(typeof(name))
-
-/* 
-    var let and const
-    var ==> in var if we specify var with same name it overrides
-    code:-
-        console.log(name) //undefined
-        var name = "sakshi"
-        console.log(name) //sakshi
-        var name = "divya"
-        console.log(name) // divya
-
-        ^^ in above code when we does not assign value then it gives undefined
-        but when we assign the value in same name it overrides the  value and print the overrided value
-
-        --------------- to overcome this JavaScript introduces let ------------------------------------
-
-    let ==>
-    const ==>
-*/
